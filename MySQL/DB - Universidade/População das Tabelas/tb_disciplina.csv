@@ -1,0 +1,31 @@
+id,nome,horario_aula,dia_semana,tb_professor_id
+1,Algoritmos,19:00 - 22:20,segunda-feira,1
+2,Estrutura de Dados,19:00 - 22:30,terça-feira,2
+3,Programação Orientada a Objetos,19:00 - 22:30,quarta-feira,3
+4,Banco de Dados,19:00 - 22:30,quinta-feira,4
+5,Estrutura de Dados I,19:00 - 22:30,sexta-feira,5
+6,Circuitos Elétricos,19:00 - 22:30,segunda-feira,6
+7,Eletrônica Analógica,19:00 - 22:30,terça-feira,7
+8,Eletrônica Digital,19:00 - 22:30,quarta-feira,8
+9,Desconhecido,19:00 - 22:30,quinta-feira,9
+10,Desconhecido,19:00 - 22:30,sexta-feira,10
+11,Anatomia Humana,19:00 - 22:30,segunda-feira,11
+12,Microbiologia,19:00 - 22:30,segunda-feira,12
+13,Farmacologia,19:00 - 22:30,segunda-feira,13
+14,Introdução as Práticas de Enfermagem,19:00 - 22:30,segunda-feira,14
+15,Antropologia Filosófica,19:00 - 22:30,segunda-feira,15
+16,Psicologia Social,19:00 - 22:30,segunda-feira,16
+17,Psicologia Cognitiva,19:00 - 22:30,terça-feira,17
+18,Psicopatologia,19:00 - 22:30,quarta-feira,18
+19,Empreendedorismo em Psicologia,19:00 - 22:30,quinta-feira,19
+20,Clínica Cognitivo Comportamental,19:00 - 22:30,sexta-feira,20
+21,Direito Constitucional,19:00 - 22:30,segunda-feira,21
+22,Direito Penal,19:00 - 22:30,terça-feira,22
+23,Direito Civil,19:00 - 22:30,quarta-feira,23
+24,Ética do Profissional Jurídico,19:00 - 22:30,quinta-feira,24
+25,Ética do Profissional Jurídico,19:00 - 22:30,sexta-feira,25
+26,Contabilidade Geral,19:00 - 22:30,segunda-feira,26
+27,Análise de Balanços,19:00 - 22:30,terça-feira,27
+28,Contabilidade Gerencial,19:00 - 22:30,quarta-feira,28
+29,Matemática Financeira,19:00 - 22:30,quinta-feira,29
+30,Direito Aplicado à Gestão,19:00 - 22:30,sexta-feira,30

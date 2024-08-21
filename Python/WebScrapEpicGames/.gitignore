@@ -1,0 +1,10 @@
+venv/
+material/
+.idea/
+__pycache__/
+releases/
+extra/
+epic.png
+dist/
+build/
+main.spec

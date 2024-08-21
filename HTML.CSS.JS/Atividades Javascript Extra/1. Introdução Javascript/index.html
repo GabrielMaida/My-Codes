@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 - Front-End</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="cabecalho">Atividade 1 - Javascript (Front-End)</h1>
+
+    <p>O texto a seguir aparecerá em um Pop-Up:</p>
+
+    <input type="text" id="textbox1" placeholder="Texto do Pop-Up:">
+    <button onClick="popup()">OK</button>
+
+    <p>O texto a seguir substituirá o cabeçalho da página:</p>
+
+    <input type="text" id="textbox2" placeholder="Novo Cabeçalho:">
+    <button onClick="cabecalho()">OK</button>
+
+    <script>
+        function popup() {
+            let textbox1Content = document.getElementById('textbox1');
+            alert(textbox1Content.value);
+        }
+        function cabecalho() {
+            let textbox2Content = document.getElementById('textbox2');
+            document.getElementById('cabecalho').innerHTML = textbox2Content.value;
+        }
+
+    </script>
+</body>
+
+</html>

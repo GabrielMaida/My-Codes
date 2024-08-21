@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Adição de Item de Coleção</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .json-output {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="text-center">Adicionar Item de Coleção</h2>
+        <form id="collectionForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="itemType" class="form-label">Tipo de Item</label>
+                <select class="form-select" id="itemType" name="itemType" required>
+                    <option value="">Selecione um tipo</option>
+                    <option value="Livro">Livro</option>
+                    <option value="Jogo">Jogo</option>
+                    <option value="Filme">Filme</option>
+                    <option value="Série">Série</option>
+                </select>
+                <div class="invalid-feedback">
+                    Por favor, selecione um tipo de item.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="itemName" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="itemName" name="itemName" placeholder="Nome do item" required>
+                <div class="invalid-feedback">
+                    Por favor, insira o nome do item.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="obtainedDate" class="form-label">Data de Obtenção</label>
+                <input type="date" class="form-control" id="obtainedDate" name="obtainedDate" required>
+                <div class="invalid-feedback">
+                    Por favor, insira a data de obtenção.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Preço</label>
+                <input type="number" step="0.01" class="form-control" id="price" name="price" placeholder="Preço do item" required>
+                <div class="invalid-feedback">
+                    Por favor, insira o preço do item.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Adicionar</button>
+        </form>
+        <div class="json-output">
+            <h3 class="text-center">Dados do Formulário</h3>
+            <textarea id="jsonOutput" class="form-control" rows="10" readonly></textarea>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.getElementById('collectionForm');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                if (form.checkValidity()) {
+                    var formData = new FormData(form);
+                    var formObject = Object.fromEntries(formData.entries());
+                    var jsonOutput = document.getElementById('jsonOutput');
+                    jsonOutput.value = JSON.stringify(formObject, null, 4);
+
+                    document.querySelector('.json-output').style.display = 'block';
+                }
+
+                form.classList.add('was-validated');
+            }, false);
+        }, false);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

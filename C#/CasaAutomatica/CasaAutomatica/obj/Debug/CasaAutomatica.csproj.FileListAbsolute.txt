@@ -1,0 +1,17 @@
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\obj\Debug\CasaAutomatica.csprojAssemblyReference.cache
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\obj\Debug\CasaAutomatica.Form1.resources
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\obj\Debug\CasaAutomatica.Properties.Resources.resources
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\obj\Debug\CasaAutomatica.csproj.GenerateResource.cache
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\obj\Debug\CasaAutomatica.csproj.CoreCompileInputs.cache
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\bin\Debug\CasaAutomatica.exe.config
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\bin\Debug\CasaAutomatica.exe
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\bin\Debug\CasaAutomatica.pdb
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\bin\Debug\BouncyCastle.Crypto.dll
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\bin\Debug\Google.Protobuf.dll
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\bin\Debug\MySql.Data.dll
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\bin\Debug\Google.Protobuf.xml
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\bin\Debug\MySql.Data.xml
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\obj\Debug\CasaAutomatica.csproj.CopyComplete
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\obj\Debug\CasaAutomatica.exe
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\obj\Debug\CasaAutomatica.pdb
+X:\Gabriel\Alessandra\Projeto Casa Automática\CasaAutomatica\CasaAutomatica\obj\Debug\CasaAutomatica.FormDados.resources

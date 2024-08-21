@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">LogUnique</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Login</a></li>
+            <li><a href="https://github.com/GabrielMaida">Linkedin</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="form-group col-sm-offset-1 col-sm-10">
+            <h3>Login Unificado</h3>
+            <p class="conteudo">Faça seu Login Unificado aqui e acesse todos seus sites favoritos com facilidade.</p>
+        </div>
+
+        <form class="form-horizontal" action="index.html">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="email" placeholder="Insira o Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Senha:</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="pwd" placeholder="Insira a Senha">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Lembrar Login</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Enviar</button>
+                    <button type="submit" class="btn btn-default">Cadastrar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

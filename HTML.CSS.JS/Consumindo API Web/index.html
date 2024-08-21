@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumindo API Web</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ddddff
+        }
+
+        tr:hover {
+            background-color: #bbbbff;
+        }
+
+        th {
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+    <script>
+        async function getMovies(){
+            let text = document.getElementById('search').value;
+            let url = `https://api.tvmaze.com/search/shows?q=${text}`;
+            const movies = document.getElementById('movies');
+            movies.innerHTML = '';
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    dataType: 'json',
+                });
+                const result = await response.json();
+                result.forEach(element => {
+                    addTableRow(
+                        movies,
+                        element.show.image.medium,
+                        element.show.name,
+                        element.show.url
+                    );
+                });
+            } catch (error) {
+                alert('Erro:' + error);
+           }
+        }
+
+        function addTableRow(parent, img, name, url){
+            let tr = document.createElement('tr');
+            tr.innerHTML = `
+                <tr>
+                    <td>
+                        <img src="${img}">
+                    </td>
+                    <td>
+                        ${name}
+                    </td>
+                    <td>
+                        <a href="${url}" target="_blank">
+                            ${url}
+                        </a>
+                    </td>
+                </tr>
+            `;
+            parent.appendChild(tr);
+        }
+    </script>
+</head>
+<body>
+    <h1>Pesquisa no TV Maze</h1>
+    <input type="text" id="search">
+    <button type="button" onclick="getMovies()">Pesquisar</button>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>
+                    Capa
+                </th>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Link
+                </th>
+            </tr>
+        </thead>
+        <tbody id="movies">
+            
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@media screen and (max-width: 800px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    ul {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .responsive-img {
+        width: 80%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    p {
+        margin: 20px;
+    }
+
+}

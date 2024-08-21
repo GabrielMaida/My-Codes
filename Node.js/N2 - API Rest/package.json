@@ -1,0 +1,14 @@
+{
+  "name": "api-n2",
+  "version": "1.0.0",
+  "description": "API para a N2 da disciplina de Back-End",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "node src/app.js"
+  },
+  "author": "Gabriel Antônio",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

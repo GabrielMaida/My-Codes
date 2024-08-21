@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Javascript</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Testes Javascript</h1>
+    <button type="button" onclick="alert('Hello World!');">Clique Aqui</button>
+    <button type="button" onclick="incrementar();">Soma no Console</button>
+    <button type="button" onmouseover="console.log('Mouse');" disabled>Passe o Mouse Aqui</button>
+
+    <p id="demo" onclick="mudarConteudo();">Bom dia pessoal</p>
+
+    <img id="botao" src="off.png" onclick="apertarBotao();">
+
+    <div class="soma">
+        <label for="x">Valor de X:</label>
+        <input type="text" id="x"><br>
+
+        <label for="y">Valor de Y:</label>
+        <input type="text" id="y"><br>
+
+        <label for="out">Resultado da Soma:</label>
+        <input type="text" disabled id="out"><br>
+
+        <button type="button" onclick="somar()">Somar</button>
+    </div>
+
+    <p id="paragrafoAnimais"></p>
+</body>
+
+</html>

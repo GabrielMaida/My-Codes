@@ -1,0 +1,31 @@
+id,nome,dt_contrato,matricula,especializacao,dt_nascimento,email
+1,Pedro Miguel Caldeira Vieira,2019-09-07,52476,Mestrado em Engenharia de Software,1984-01-31,pedro_miguel@progressoglobal.edu.br
+2,Luna Costela Costela,2018-03-17,41881,Especialização em Inteligência Artificial,1983-08-13,luna_costela@progressoglobal.edu.br
+3,Laura Santos da Paz,2019-05-19,90295,Doutorado em Matemática Computacional,1983-08-10,laura_santos@progressoglobal.edu.br
+4,Bryan da Costa da Conceição,2018-08-29,46883,Mestrado em Ciência da Computação,1978-09-07,bryan_da@progressoglobal.edu.br
+5,Davi Lucas das Neves da Rocha,2017-03-20,38011,Especialização em Inteligência Artificial,1984-05-07,davi_lucas@progressoglobal.edu.br
+6,Beatriz Araújo Fernandes,2017-09-01,46590,Mestrado em Automação Industrial,1984-09-01,beatriz_araújo@progressoglobal.edu.br
+7,Maria Cecília Martins Barbosa,2017-11-29,5646,Especialização Comunicação e Redes,1987-12-10,maria_cecília@progressoglobal.edu.br
+8,Leandro Silva Oliveira,2017-01-29,65697,Mestrado em Automação Industrial,1983-01-15,leandro_silva@progressoglobal.edu.br
+9,Arthur Sales da Cunha,2017-04-03,42406,Dourado em Sistemas de Energia Renovável,1988-07-06,arthur_sales@progressoglobal.edu.br
+10,Lavínia Jesus da Mota,2017-04-29,42349,Mestrado Eletrônica Embarcada,1978-12-15,lavínia_jesus@progressoglobal.edu.br
+11,Bernardo Oliveira Cunha,2019-05-10,34239,Especialização Enfermagem Obstétrica,1986-10-30,bernardo_oliveira@progressoglobal.edu.br
+12,Clara Ramos da Mota,2017-05-25,70875,Doutourado em Enfermagem e Terapia Intensiva,1978-07-15,clara_ramos@progressoglobal.edu.br
+13,Sophia Freitas Melo,2019-06-17,67850,Doutourado em Enfermagem e Terapia Intensiva,1988-02-23,sophia_freitas@progressoglobal.edu.br
+14,Felipe Cunha Moura,2019-01-20,44027,Mestrado em Oncológia,1973-10-16,felipe_cunha@progressoglobal.edu.br
+15,Enzo Pires da Conceição,2019-09-07,78724,Especialização Enfermagem Obstétrica,1980-07-03,enzo_pires@progressoglobal.edu.br
+16,Esther Melo Melo,2018-12-25,67405,Especialização em Psicologia do Esporte,1974-06-07,esther_melo@progressoglobal.edu.br
+17,Evelyn Nogueira Sales,2017-01-21,82858,Especialização em Psicologia Forense,1976-04-04,evelyn_nogueira@progressoglobal.edu.br
+18,Laís Duarte Costa,2016-10-22,91035,Especialização em Psicologia Forense,1987-03-09,laís_duarte@progressoglobal.edu.br
+19,Vitor Hugo Barbosa da Costa,2017-12-02,5753,Especialização em Psicologia do Esporte,1980-05-17,vitor_hugo@progressoglobal.edu.br
+20,Bruna Silva Pereira,2017-06-27,50723,Especialização em Psicologia do Esporte,1983-08-21,bruna_silva@progressoglobal.edu.br
+21,João Vitor Gonçalves Teixeira,2017-09-03,75200,Mestrado em Direito Tributário,1986-08-20,joão_vitor@progressoglobal.edu.br
+22,Ana Laura Peixoto Moreira,2019-02-11,6593,Mestrado em Direito Tributário,1974-05-15,ana_laura@progressoglobal.edu.br
+23,Milena Novaes Castro,2019-06-14,40098,Especialização em Direito de Família,1983-06-28,milena_novaes@progressoglobal.edu.br
+24,Gabriel Souza Caldeira,2019-08-16,31497,Mestrado em Direito Tributário,1984-08-03,gabriel_souza@progressoglobal.edu.br
+25,Alice Monteiro Lopes,2018-02-25,75959,Mestrado em Direito Tributário,1979-12-30,alice_monteiro@progressoglobal.edu.br
+26,Stephany da Cruz Costa,2019-06-09,71913,Mestrado em Análise Financeira,1983-12-01,stephany_da@progressoglobal.edu.br
+27,Emanuel Azevedo Melo,2017-07-17,62266,Especialização em Auditoria,1979-01-02,emanuel_azevedo@progressoglobal.edu.br
+28,Kevin Cardoso Novaes,2017-11-06,67507,Mestrado em Gestão Fiscal,1974-08-07,kevin_cardoso@progressoglobal.edu.br
+29,Enzo Gabriel Melo Nascimento,2018-09-09,69218,Especialização em Auditoria,1979-08-26,enzo_gabriel@progressoglobal.edu.br
+30,Yuri Ribeiro Vieira,2019-05-30,70763,Mestrado em Gestão Fiscal,1985-05-02,yuri_ribeiro@progressoglobal.edu.br

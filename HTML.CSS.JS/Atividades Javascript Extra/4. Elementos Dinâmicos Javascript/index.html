@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4 - Front-End</title>
+
+</head>
+
+<body style="text-align: center;">
+    <!--Atividade 2
+    Crie um campo texto e um botão ENVIAR
+    crie uma lista (bullets) vazia
+    Ao clicar no botão ENVIAR, adiciona um ítem na lista com o conteúdo do campo texto e apague o conteúdo do campo texto
+    Atividade 3
+    Crie três campos de entrada (nome, telefone, e-mail)
+    Crie dois botões (adicionar, limpar)
+    Crie uma tabela com três colunas e com os títulos Nome, Telefone e E-mai
+    Ao entrar com informações nos campos texto e clicar no botão adicionar, é criada uma linha na tabela e são adicionados os dados que estavam nos campos de texto e os campos de texto são limpos
+    Ao clicar no botão limpar, exclui todas as linhas da tabela, menos a linha de título-->
+
+    <h1 id="cabecalho">Atividade 4 - Javascript (Front-End)</h1>
+
+    <p>O texto a seguir é atualizado dinamicamente:</p>
+
+    <input type="text" name="txtb1" id="textbox1" oninput="alterar()">
+    <button onclick="reset()">Reset</button>
+
+    <p>O texto a seguir explodirá:</p>
+
+    <input type="text" name="txtb2" id="textbox2">
+    <button>Ok</button>
+
+    <script>
+        function alterar() {
+            let textbox1Content = document.getElementById('textbox1');
+            let h1Content = document.getElementById('cabecalho');
+            h1Content.innerHTML = textbox1Content.value;
+        }
+        function reset() {
+            let textbox1Content = document.getElementById('textbox1');
+            let h1Content = document.getElementById('cabecalho');
+            textbox1Content.value = '';
+            h1Content.innerHTML = 'Atividade 4 - Javascript (Front-End)';
+        }
+    </script>
+
+</body>
+
+</html>

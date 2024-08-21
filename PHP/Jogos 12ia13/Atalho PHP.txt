@@ -1,0 +1,6 @@
+Atalho PHP
+
+Caso queira abrir um PHP, apenas para dar um echo,
+o atalho seguinte funciona:
+
+<?= (o que quiser dar echo) ?>

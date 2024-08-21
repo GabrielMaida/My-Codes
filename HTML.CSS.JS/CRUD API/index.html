@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    
+    <style>
+        table {
+            width: 100%;
+        }
+
+        th {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type=number],
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        input[type=submit],
+        input[type=reset] {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .btn-group .button {
+            background-color: #04AA6D;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-group .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+
+
+    <script>
+        const url = 'https://api.arisa.com.br/users';
+
+        async function carregarDados(){
+            let tbody = document.getElementById('tbody');
+            tbody.innerHTML = '';
+
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    dataType: 'json'
+                });
+                const result = await response.json();
+
+                result.forEach(element => {
+                    let tr = document.createElement('tr');
+                    tr.innerHTML = `
+                    <td>${element.id}</td>
+                    <td>
+                        <a href="#" onclick="selecionar(${element.id});">
+                        ${element.name}
+                        </a>
+                    </td>
+                    <td>${element.email}</td>
+                    <td>
+                        <button type="button" onclick="excluir(${element.id});">
+                            X
+                        </button>
+                    </td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+
+            } catch (error){
+                alert("Erro:" + error);
+            }
+        }
+
+        async function selecionar(id_selecionado){
+            let id = document.getElementById('id');
+            id.disabled = true;
+            let name = document.getElementById('name');
+            let email = document.getElementById('email');
+            try{
+                const response = await fetch(`${url}/${id_selecionado}`, {
+                    method: 'GET',
+                    dataType: 'json'
+                });
+                const user = await response.json();
+                id.value = user.id;
+                name.value = user.name;
+                email.value = user.email;
+            } catch (error){
+                alert("Erro:" + error);
+            }
+        }
+
+        function limpar(){
+            let id = document.getElementById('id');
+            id.disabled = false;
+            id.value = '';
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+           
+        }
+
+        async function gravar(){
+            let id = document.getElementById('id');
+            let name = document.getElementById('name');
+            let email = document.getElementById('email');
+            let i_id = parseInt(id.value);
+            if (isNaN(i_id) || i_id < 0){
+                alert('ID inválido');
+                return;
+            }
+            let data = {
+                id: i_id,
+                name: name.value,
+                email: email.value
+            };
+            let method = id.disabled ? 'PUT' : 'POST';
+            try{
+                const response = await fetch(url, {
+                    method: method,
+                    dataType: 'json',
+                    contentType: 'application/json; charset=utf-8',
+                    body: JSON.stringify(data)
+                }).then(result => {
+                    limpar();
+                    carregarDados();
+                    });
+            } catch (error){
+                alert("Erro:" + error);
+            }
+        }
+
+        async function excluir(id_selecionado){
+            try{
+                const response = await fetch(`${url}/${id_selecionado}`, {
+                    method: 'DELETE',
+                    dataType: 'json'
+                }).then(result => {
+                    limpar();
+                    carregarDados();
+                });
+            } catch (error){
+                alert("Erro:" + error);
+            }
+        }
+    </script>
+
+</head>
+<body onload="carregarDados();">
+    <h1 style="text-align: center;">Usuários</h1>
+    <form style="margin: auto; width: 40%; margin-bottom: 30px;">
+        <label for="id">ID:</label>
+        <input type="text" id="id">
+
+        <label for="name">Nome:</label>
+        <input type="text" id="name">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+
+        <button type="button" onclick="gravar();">Gravar</button>
+        <button type="button" onclick="limpar();">Limpar</button>
+        <button type="button" onclick="carregarDados();">Recarregar</button>
+    </form>
+
+    <table style="margin: auto; width: 75%;text-align: center;">
+        <thead>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th></th>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+</body>
+</html>
